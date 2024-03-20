@@ -27,4 +27,4 @@ RUN \
 ##      "--logs_exporter", "console", \
 ##      "--service_name", "dice-server", \
 ##      "flask", "run", "--host", "0.0.0.0", "-p", "8081"]
-CMD ["opentelemetry-instrument", "--logs_exporter", "otlp", "flask", "run", "--host", "0.0.0.0", "-p", "8081"
+CMD ["opentelemetry-instrument", "--logs_exporter", "otlp", "flask", "run", "--host", "0.0.0.0", "-p", "8081"]
