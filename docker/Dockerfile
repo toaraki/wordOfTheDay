@@ -5,7 +5,7 @@ EXPOSE 8081/tcp
 ENV FLASK_PORT=8081
 ENV OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true
 #ENV OTEL_SERVICE_NAME="tempo-sample.openshift-tempo-operator.svc"
-ENV OTEL_EXPORTER_OTLP_TRACES_ENDPOINT="https://tempo-sample.openshift-tempo-operator.svc:4317"
+ENV OTEL_EXPORTER_OTLP_TRACES_ENDPOINT="http://tempo-sample.openshift-tempo-operator.svc:4317"
 
 # Set the working directory in the container
 WORKDIR /projects
