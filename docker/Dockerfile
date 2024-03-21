@@ -27,4 +27,4 @@ RUN \
 ##      "--logs_exporter", "console", \
 ##      "--service_name", "dice-server", \
 ##      "flask", "run", "--host", "0.0.0.0", "-p", "8081"]
-CMD ["opentelemetry-instrument", "--log_level", "debug", "--logs_exporter", "otlp,console", "-exporter_otlp_endpoint", "tempo-sample.openshift-tempo-oerator.svc:4317", "flask", "run", "--debug", "--host", "0.0.0.0", "-p", "8081"]
+CMD ["opentelemetry-instrument", "--log_level", "debug", "--logs_exporter", "otlp,console", "--exporter_otlp_endpoint", "tempo-sample.openshift-tempo-oerator.svc:4317", "flask", "run", "--debug", "--host", "0.0.0.0", "-p", "8081"]
