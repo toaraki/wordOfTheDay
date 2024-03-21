@@ -22,9 +22,6 @@ RUN \
     then pip install -r *.txt; \
   fi
 
-RUN \
-  go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
-
 # Specify the command to run on container start
 ##  CMD ["opentelemetry-instrument", \
 ##      "--traces_exporter", "console", \
