@@ -23,4 +23,4 @@ RUN \
 
 # Specify the command to run on container start
 # CMD ["opentelemetry-instrument", "--log_level", "debug", "--trace_exporter", "otlp", "--logs_exporter", "console", "flask", "run", "--host", "0.0.0.0", "-p", "8081"]
-CMD ["opentelemetry-instrument", "--log_level", "debug", "--logs_exporter", "otlp", "flask", "run", "-p", "8081"]
+CMD ["opentelemetry-instrument", "--log_level", "debug", "--logs_exporter", "otlp", "flask", "run", "--host", "0.0.0.0", "-p", "8081"]
